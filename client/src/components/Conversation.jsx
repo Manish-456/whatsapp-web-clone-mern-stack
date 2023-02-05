@@ -80,7 +80,7 @@ const Conversation = ({ user }) => {
           alignItems : "center",
         }}>
           <Text>
-     {incomingMsg?.senderId === user?.sub && incomingMsg?.receiverId === sender?.sub ? incomingMsg?.text :   (message?.text?.includes("react-whatsapp-web-clone"))
+     {incomingMsg?.senderId === user?.sub ? (incomingMsg?.text?.includes("react-whatsapp-web-clone")) ? "media" : incomingMsg?.text :   (message?.text?.includes("react-whatsapp-web-clone"))
    ? "media"
  : message?.text}
           </Text>

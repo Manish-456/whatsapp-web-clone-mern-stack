@@ -95,7 +95,9 @@ const LoginDialog = () => {
               left: "5%",
             }}
           >
-            <GoogleLogin
+            <GoogleLogin style={{
+              padding : "2px 3px !important"
+            }}
               onSuccess={handleLoginSuccess}
               onError={handleLoginError}
             />
