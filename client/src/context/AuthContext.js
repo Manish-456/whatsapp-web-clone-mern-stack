@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
   const [incomingMsg, setIncomingMsg] = useState(null);
   const socket = useRef();
   useEffect(() => {
-    socket.current = io("ws://localhost:9000");
+    socket.current = io("https://whatsapp-web-socket.onrender.com");
   }, [newMessage]);
 
   return (
