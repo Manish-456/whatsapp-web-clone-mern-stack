@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import grid from 'gridfs-stream';
 let gfs, gridFsBucket;
-const url = "http://localhost:8080/api/file"
+const url = "https://react-whatsapp-web-clone.onrender.com/api/file"
 const db = mongoose.connection;
 db.once('open', () => {
    gridFsBucket = new mongoose.mongo.GridFSBucket(db.db,  {
